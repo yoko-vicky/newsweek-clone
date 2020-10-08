@@ -48,9 +48,9 @@ main,
 #featured-stories,
 #the-debate,
 #opinion,
-#articles-1,
-#more-stories,
-#my-turn,
+.articles-1,
+.more-stories,
+.my-turn,
 #articles-2,
 #in-the-magazine,
 #editors-pick,
@@ -77,15 +77,15 @@ main,
   background-color: #32c5ff;
   min-height: 15em;
 }
-#articles-1 {
+.articles-1 {
   background-color: #6dd400;
   min-height: 20em;
 }
-#more-stories {
+.more-stories {
   background-color: #b620e0;
   min-height: 20em;
 }
-#my-turn {
+.my-turn {
   background-color: #ff00b9;
 }
 #articles-2 {

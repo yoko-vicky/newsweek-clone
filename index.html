@@ -70,38 +70,47 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-9" style="border:1px solid red;">
+          <div class="col-12 col-lg-9" style="border:1px solid red;">
 
-              <div class="row">
-                <div class="col-12 col-md-5">
-                  <section id="featured-stories">
-                    FEATURED STORIES
-                  </section>
-                  <div id="articles-1">
-                    ARTICLES-1
-                  </div>
-                </div>
-                <div class="col-12 col-md-7">
-                  <section id="top-story">
-                    TOP STORY
-                  </section>
-                  <section id="my-turn" class="d-none d-md-block">
-                    MY TURN
-                  </section>
-                  <section id="more-stories" class="d-none d-md-block">
-                    MORE STORIES
-                  </section>
+            <div class="row">
+              <div class="col-12 col-md-5 order-1 order-md-0">
+                <section id="featured-stories">
+                  FEATURED STORIES
+                </section>
+                <div class="d-none d-md-block articles-1">
+                  ARTICLES-1
                 </div>
               </div>
+              <div class="col-12 col-md-7 order-0 order-md-1">
+                <section id="top-story">
+                  TOP STORY
+                </section>
+                <section class="d-none d-md-block my-turn">
+                  MY TURN
+                </section>
+                <section class="d-none d-md-block more-stories">
+                  MORE STORIES
+                </section>
+              </div>
+            </div>
 
           </div>
-          <div class="col-12 col-md-3" style="border:1px solid red;">
+          <div class="col-12 col-lg-3" style="border:1px solid red;">
             <section id="the-debate">
               THE DEBATE
             </section>
             <!-- opinion -->
             <section id="opinion">
               OPINION
+            </section>
+            <div class="d-md-none articles-1">
+              ARTICLES-1
+            </div>
+            <section class="d-md-none more-stories">
+              MORE STORIES
+            </section>
+            <section class="d-md-none my-turn">
+              MY TURN
             </section>
             <div id="articles-2">
               ARTICLES 2
@@ -111,45 +120,118 @@
       </div>
 
 
-
-
-      <div id="top-contents-wrapper">
-        <!-- top story -->
-
-        <!-- featured story -->
-
-        <!-- the debate -->
-
-        <!-- article group 1 -->
-
-        <!-- more stories -->
-
-        <!-- my turn -->
-
-        <!-- article group 2 -->
-
-      </div>
-
-      <section id="in-the-magazine">
-        IN THE MAGAZINE
+      <section class="container" id="in-the-magazine">
+        <h1>in the magazine</h1>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            article
+          </div>
+          <div class="col-12 col-md-3">
+            article
+          </div>
+          <div class="col-12 col-md-3">
+            article
+          </div>
+          <div class="col-12 col-md-3">
+            article
+          </div>
+          <div class="col-12 col-md-3">
+            article
+          </div>
+          <div class="col-12 col-md-3">
+            article
+          </div>
+          <div class="col-12 col-md-3">
+            article
+          </div>
+          <div class="col-12 col-md-3">
+            article
+          </div>
+        </div>
       </section>
 
-      <section id="editors-pick">
-        EDITORS PICK
+
+      <section class="container" id="editors-pick">
+        <h1>Editor's pick</h1>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+          <div class="col-12 col-md-6 col-lg-3">article</div>
+        </div>
       </section>
 
-      <div id="articles-3">
-        ARTICLES 3
+      <div id="articles-3" class="d-none d-lg-block container">
+        <section class="article-3">
+          <h3>U.S.</h3>
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col-6">article</div>
+                <div class="col-6">article</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex">
+                  image content
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="article-3">
+          <h3>U.S.</h3>
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col-6">article</div>
+                <div class="col-6">article</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex">
+                  image content
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <div id="promotion">
-        PROMOTION
+      <div id="promotion" class="container">
+        <div class="row">
+          <div class="col-8">
+            <h3>Subscribe</h3>
+          </div>
+          <div class="col-4">
+            <h3>Newsletter</h3>
+          </div>
+        </div>
       </div>
 
     </main>
     <!-- footer -->
-    <footer class="main-footer">
-      FOOTER
+    <footer class="main-footer container">
+      <div class="row">
+        <div class="col-6">Newsweek logo</div>
+        <div class="col-6">icons</div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          Editions
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          links
+        </div>
+      </div>
     </footer>
   </div>
 
