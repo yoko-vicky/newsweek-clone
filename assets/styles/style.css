@@ -18,6 +18,30 @@ body {
   opacity: 0.75;
 }
 
+.top-navbar {
+  position: relative;
+  top: -10px;
+  background: #fff;
+  width: 90%;
+  border-radius: 0 20px 0 0;
+}
+
+.search {
+  border: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.search-icon {
+  border: none;
+  background: none;
+  right: -10px;
+}
+
+.bottom-navbar .nav-link {
+  letter-spacing: -0.5px;
+}
+
 /* Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */
 /* Small (sm) devices (landscape phones, 576px and up) */
