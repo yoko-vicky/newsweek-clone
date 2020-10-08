@@ -21,49 +21,95 @@
   <div class="body-container">
     <!-- header -->
     <header class="main-header">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="./assets/images/Newsweek_Logo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-          <div class="info">
-            <a href="#">14° Saitama, JP</a>
-            <span>Wed, Oct 07, 2020</span>
+
+      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0">
+
+        <div class="d-flex justify-content-between w-100 bg-danger p-3">
+          <div class="info d-none d-md-block">
+            <a href="#" class="d-inline-block">14° Saitama, JP</a>
+            <p>Wed, Oct 07, 2020</p>
+          </div>
+          <div>
+            <a class="navbar-brand" href="#"><img src="./assets/images/Newsweek_Logo.svg" alt=""></a>
           </div>
           <ul class="nav">
             <a class="nav-link active" href="#"><i class="fas fa-user"></i> Login</a>
             <a class="nav-link" href="#">Subscription offers</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </ul>
         </div>
+
+        <div id="sideMenu" class="collapse navbar-collapse flex-lg-column w-100 px-3 pb-3">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">U.S.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Texh & Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Newsgeek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">The Debate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Weather</a>
+            </li>
+            <li class="nav-item">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Donald Tramp</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Joe Biden</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Stimulus package</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Colonavirus</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">2020 elction</a>
+            </li>
+          </ul>
+
+          <!-- <nav class="nav nav-pills flex-column flex-sm-row">
+          </nav> -->
+        </div>
       </nav>
-      <div id="sideMenu">
-        <nav class="nav nav-pills flex-column flex-sm-row">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">U.S.</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">World</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Business</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Texh & Science</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Culture</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Newsgeek</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Sports</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Health</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">The Debate</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Vantage</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Weather</a>
-        </nav>
-        <nav class="nav nav-pills flex-column flex-sm-row">
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Trending</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Donald Tramp</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Joe Biden</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Stimulus package</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Colonavirus</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">2020 elction</a>
-        </nav>
-      </div>
     </header>
     <!-- main contents -->
     <main>

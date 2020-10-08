@@ -24,10 +24,6 @@ body {
   background-color: white;
 }
 
-.navbar {
-  background-color: var(--color-primary);
-}
-
 .navbar * {
   color: white;
 }
