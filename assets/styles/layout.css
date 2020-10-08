@@ -11,31 +11,10 @@
   --color-light-grey5: #f4f5f7;
 }
 
-body {
-  background-color: #f4f5f6;
-}
-
-.body-container {
-  width: 100%;
-  max-width: 1310px;
-  margin: 0 auto;
-  background-color: white;
-}
-
-.navbar-brand img {
-  width: 160px;
-}
-
-main,
-.main-footer {
-  font-size: 30px;
-  font-weight: bold;
-}
-
 /* INSIDE TOP CONTENTS WRAPPER */
-#top-story,
-#featured-stories,
-#the-debate,
+/* #top-story, */
+/* #featured-stories, */
+/* #the-debate, */
 #opinion,
 .articles-1,
 .more-stories,
@@ -52,14 +31,14 @@ main,
 }
 
 #top-story {
-  background-color: #e02020;
+  /* background-color: #e02020; */
 }
 #featured-stories {
-  background-color: #f7b500;
-  min-height: 20em;
+  /* background-color: #f7b500;
+  min-height: 20em; */
 }
 #the-debate {
-  background-color: #3b76d8;
+  /* background-color: #3b76d8; */
 }
 #opinion {
   background-color: #32c5ff;

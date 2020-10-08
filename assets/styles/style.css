@@ -3,6 +3,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f4f5f6;
+}
+
+.body-container {
+  width: 100%;
+  max-width: 1310px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 .navbar-brand img {
@@ -42,6 +50,65 @@ body {
   letter-spacing: -0.5px;
 }
 
+.category {
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  left: 0;
+}
+
+.paragraph {
+  font-size: 13px;
+}
+
+.debate-image {
+  width: 63px;
+  height: 63px;
+}
+
+.byline {
+  font-size: 14px;
+}
+
+.debate-wrap {
+  border-top: 4px solid #d9d9d9;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.deco {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-vs {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.deco::before,
+.deco::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #d9d9d9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.deco::before {
+  top: 15px;
+}
+.deco::after {
+  top: 17px;
+}
+
 /* Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */
 /* Small (sm) devices (landscape phones, 576px and up) */
@@ -51,6 +118,10 @@ No media query since this is the default in Bootstrap */
 /* Medium (md) devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .subscription-btn {
+    font-size: 15px;
+  }
+
+  .paragraph {
     font-size: 15px;
   }
 }
