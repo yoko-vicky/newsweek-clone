@@ -8,11 +8,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <!-- Fontawosome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
   <!-- Custom style -->
   <link rel="stylesheet" href="./assets/styles/style.css">
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <title>My Newsweek Test</title>
 </head>
@@ -22,22 +25,23 @@
     <!-- header -->
     <header class="main-header">
 
-      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0">
-
-        <div class="d-flex justify-content-between w-100 bg-danger p-3">
-          <div class="info d-none d-md-block">
-            <a href="#" class="d-inline-block">14° Saitama, JP</a>
-            <p>Wed, Oct 07, 2020</p>
+      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0 mr-0">
+        <div class="d-flex justify-content-between w-100 bg-danger py-2 px-3 py-lg-3">
+          <div class="info d-none d-lg-block col">
+            <a href="#" class="d-inline-block text-white my-2 d-flex align-items-center">14° Saitama, JP<span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span></a>
+            <p class="mb-0 text-white">Wed, Oct 07, 2020</p>
           </div>
-          <div>
-            <a class="navbar-brand" href="#"><img src="./assets/images/Newsweek_Logo.svg" alt=""></a>
+          <div class="col p-0">
+            <a class="navbar-brand d-block m-0 p-0" href="#">
+              <img src="./assets/images/Newsweek_Logo.svg" alt="">
+            </a>
           </div>
-          <ul class="nav">
-            <a class="nav-link active" href="#"><i class="fas fa-user"></i> Login</a>
-            <a class="nav-link" href="#">Subscription offers</a>
+          <ul class="align-self-end col-xs-8 d-flex justify-content-end align-items-center mb-1 p-0 ml-3">
+            <a class="text-uppercase text-white font-weight-bold mr-2" href="#"><span class="user-icon iconify d-md-none h4 m-0" data-icon="bx:bxs-user" data-inline="false"></span><span class="d-none d-md-block">Login</span></a>
+            <a class="subscription-btn text-uppercase btn btn-warning font-weight-bold py-1 d-flex mr-2 mr-lg-0 align-items-center rounded-pill" href="#">Subscription offers <span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler m-0 p-0 border-0" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="iconify text-white" data-icon="bytesize:menu" data-inline="false"></span>
             </button>
           </ul>
         </div>
