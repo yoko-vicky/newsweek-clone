@@ -123,11 +123,11 @@ No media query since this is the default in Bootstrap */
 
 /* Medium (md) devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  #top-contents-wrapper {
+  /* #top-contents-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
-  }
+  } */
 }
 
 /* Large (lg) devices (desktops, 992px and up) */
