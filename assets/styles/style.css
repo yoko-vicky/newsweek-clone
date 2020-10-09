@@ -119,11 +119,16 @@ body {
   line-height: 1.3;
 }
 
+.stories-img-wrapper {
+  flex: 0 0 95px;
+}
+
 .stories-img {
-  width: 95px;
   height: 95px;
   object-fit: cover;
 }
+
+
 
 /* Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */

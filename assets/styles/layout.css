@@ -15,12 +15,12 @@
 /* #top-story, */
 /* #featured-stories, */
 /* #the-debate, */
-#opinion,
+/* #opinion, */
 .articles-1,
 /* .more-stories, */
 /* .my-turn, */
 #articles-2,
-#in-the-magazine,
+/* #in-the-magazine, */
 #editors-pick,
 #articles-3,
 #promotion,
@@ -41,8 +41,8 @@
   /* background-color: #3b76d8; */
 }
 #opinion {
-  background-color: #32c5ff;
-  min-height: 15em;
+  /* background-color: #32c5ff;
+  min-height: 15em; */
 }
 .articles-1 {
   background-color: #6dd400;
@@ -62,8 +62,8 @@
 
 /* OUTSIDE TOP CONTENTS WRAPPER */
 #in-the-magazine {
-  background-color: #fa9000;
-  min-height: 10em;
+  /* background-color: #fa9000;
+  min-height: 10em; */
 }
 #editors-pick {
   background-color: #fa5600;
