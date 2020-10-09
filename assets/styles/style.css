@@ -128,6 +128,31 @@ body {
   font-size: 80px;
 }
 
+.cover-img-wrapper {
+  min-height: 230px;
+}
+
+.cover-img:first-child {
+  left: 30%;
+}
+
+.cover-img:nth-child(2) {
+  left: 43%;
+  top: 20px;
+}
+
+.newsletter-container .left {
+  background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 170px;
+}
+
+.email-input {
+  height: unset;
+}
+
 /* Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */
 /* Small (sm) devices (landscape phones, 576px and up) */
@@ -155,6 +180,19 @@ No media query since this is the default in Bootstrap */
 
   .magazine-title {
     font-size: 19px;
+  }
+
+  .cover-img:first-child {
+    left: 0;
+  }
+
+  .cover-img:nth-child(2) {
+    left: 60px;
+  }
+
+  .newsletter-container .left {
+    height: unset;
+    background-size: 230%;
   }
 }
 
