@@ -58,6 +58,7 @@ body {
 
 .paragraph {
   font-size: 13px;
+  line-height: 1.4;
 }
 
 .debate-image {
@@ -114,11 +115,6 @@ body {
   object-fit: cover;
 }
 
-.my-turn .paragraph,
-.culture .paragraph {
-  line-height: 1.3;
-}
-
 .stories-img-wrapper {
   flex: 0 0 95px;
 }
@@ -128,6 +124,9 @@ body {
   object-fit: cover;
 }
 
+.signup-card .icon-n {
+  font-size: 80px;
+}
 
 
 /* Extra small (xs) devices (portrait phones, less than 576px)
