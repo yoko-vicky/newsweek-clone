@@ -21,7 +21,7 @@
 /* .my-turn, */
 /* #articles-2, */
 /* #in-the-magazine, */
-#editors-pick,
+/* #editors-pick, */
 #articles-3,
 #promotion,
 .main-footer {
@@ -66,8 +66,8 @@
   min-height: 10em; */
 }
 #editors-pick {
-  background-color: #fa5600;
-  min-height: 17em;
+  /* background-color: #fa5600;
+  min-height: 17em; */
 }
 #articles-3 {
   background-color: #2ed5c9;
