@@ -19,12 +19,12 @@
   <title>My Newsweek Test</title>
 </head>
 
-<body>
-  <div class="body-container">
+<body class="bg-light">
+  <div class="body-container w-100 mx-auto my-0 bg-white">
     <!-- header -->
     <header class="main-header">
 
-      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0 mr-0">
+      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0 mr-0 fixed-top" id="navbar">
         <div class="d-flex justify-content-between w-100 bg-danger py-2 px-3 py-lg-4">
           <div class="info d-none d-lg-block col">
             <a href="#" class="d-inline-block text-white my-2 d-flex align-items-center">14° Saitama, JP<span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span></a>
@@ -46,7 +46,7 @@
         </div>
 
         <div id="sideMenu" class="collapse navbar-collapse flex-lg-column w-100">
-          <ul class="navbar-nav mr-auto font-weight-bold px-3 pt-3 top-navbar">
+          <ul class="navbar-nav mr-auto font-weight-bold px-3 pt-3 top-navbar position-relative bg-white">
             <li class="nav-item">
               <a href="#" class="text-dark px-2 border-right">U.S.</a>
             </li>
@@ -82,8 +82,8 @@
             </li>
             <li class="nav-item">
               <form class="form-inline d-flex position-relative">
-                <input class="search w-100" type="search" placeholder="Search" aria-label="Search">
-                <button class="search-icon position-absolute h5" type="submit">
+                <input class="search w-100 border-0 bg-white text-dark" type="search" placeholder="Search" aria-label="Search">
+                <button class="search-icon position-absolute h5 border-0 bg-transparent" type="submit">
                   <span class="iconify" data-icon="clarity:search-line" data-inline="false"></span>
                 </button>
               </form>
@@ -512,7 +512,7 @@
                   </div>
                   <img src="https://d.newsweek.com/en/full/1533434/swalwell2.png?w=150&h=150&f=b4925d53fde4dc49edb774ea5fdbadbd" alt="Eric Swalwell" class="debate-image">
                 </div>
-                <div class="deco position-absolute">
+                <div class="deco w-100 position-absolute">
                   <div class="c-vs bg-dark text-white d-flex justify-content-center align-items-center font-weight-bold rounded-circle position-relative">VS</div>
                 </div>
               </div>
@@ -854,7 +854,7 @@
             </section>
 
             <!-- article group 2 -->
-            <div id="articles-2">
+            <div id="articles-2" class="mx-auto my-4">
               <article class="card mb-3 border-0">
                 <div class="wrap position-relative">
                   <a href="#">
@@ -870,7 +870,7 @@
                 </div>
               </article>
 
-              <div class="card border-0 bg-light signup-card py-md-1 px-md-2">
+              <div class="card border-0 bg-light signup-card mt-0 mb-3 mx-auto py-md-1 px-md-2">
                 <div class="p-3 border bg-light">
                   <div class="text-uppercase d-flex align-items-center">
                     <span class="iconify text-danger icon-n mr-1" data-icon="mdi:alpha-n-box" data-inline="false"></span>
@@ -1709,7 +1709,7 @@
             <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">日本</a></li>
             <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">Pakistan</a></li>
             <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">Polska</a></li>
-            <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">România</a></li>
+            <li class="pr-3 mb-1 mr-md-3 border-0"><a href="#" class="text-muted">România</a></li>
           </ul>
         </div>
       </div>
@@ -1728,7 +1728,7 @@
             <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Terms of Sale</a></li>
             <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Archive</a></li>
             <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Announcements</a></li>
-            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">GDPR Privacy Settings</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1 border-0"><a href="#" class="text-muted">GDPR Privacy Settings</a></li>
           </ul>
         </div>
       </div>
@@ -1741,5 +1741,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
