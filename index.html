@@ -24,9 +24,9 @@
     <!-- header -->
     <header class="main-header">
 
-      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0 mr-0 fixed-top" id="navbar">
-        <div class="d-flex justify-content-between w-100 bg-danger py-2 px-3 py-lg-4">
-          <div class="info d-none d-lg-block col">
+      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0 mr-0" id="navbar">
+        <div class="d-flex justify-content-between w-100 bg-danger py-2 px-3 py-lg-4 main-navbar">
+          <div class="info d-none d-lg-block col" id="nav-info">
             <a href="#" class="d-inline-block text-white my-2 d-flex align-items-center">14° Saitama, JP<span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span></a>
             <p class="mb-0 text-white">Wed, Oct 07, 2020</p>
           </div>
@@ -39,7 +39,7 @@
             <a class="text-uppercase text-white font-weight-bold mr-2" href="#"><span class="user-icon iconify d-md-none h4 m-0" data-icon="bx:bxs-user" data-inline="false"></span><span class="d-none d-md-block">Login</span></a>
             <a class="subscription-btn text-uppercase btn btn-warning font-weight-bold py-1 d-flex mr-2 mr-lg-0 align-items-center rounded-pill" href="#">Subscription offers <span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span></a>
 
-            <button class="navbar-toggler m-0 p-0 border-0" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler m-0 pl-3 py-0 pr-0 border-0" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="iconify text-white" data-icon="bytesize:menu" data-inline="false"></span>
             </button>
           </div>
@@ -111,8 +111,6 @@
             </li>
           </ul>
 
-          <!-- <nav class="nav nav-pills flex-column flex-sm-row">
-          </nav> -->
         </div>
       </nav>
     </header>
@@ -944,7 +942,7 @@
         <div class="row">
           <div class="col-12 col-md-3">
             <article class="card mb-3 border-0">
-              <div class="wrap position-relative">
+              <div class="wrap position-relative mt-3">
                 <a href="#">
                   <img class="card-img-top" src="https://d.newsweek.com/en/full/1643943/cover-october-09-16-2020.jpg" alt="Card image cap">
                 </a>
@@ -1625,13 +1623,13 @@
           <section class="col-12 col-lg-7">
             <h6 class="text-uppercase my-3 text-danger">Subscribe</h6>
 
-            <div class="bg-light p-5 row align-items-center">
+            <div class="bg-light p-5 d-flex align-items-center subscribe-container flex-wrap p-lg-3">
               <div class="position-relative col-12 col-md-4 p-0 cover-img-wrapper">
                 <img class="position-absolute cover-img img-fluid" src="./assets/images/cover-subscribe.jpg" alt="subscribe cover first">
                 <img class="position-absolute cover-img img-fluid" src="./assets/images/cover-subscribe-1.jpg" alt="subscribe cover second">
               </div>
 
-              <div class="col-12 col-md-8 pr-0 mt-5 mt-md-0 text-center text-md-left">
+              <div class="col-12 col-md-8 pr-0 mt-5 mt-md-0 text-center text-md-left pl-lg-5">
                 <h5 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h5>
                 <p class="text-muted">
                   All Access + Weekly Delivery. <br>
@@ -1648,9 +1646,9 @@
           <div class="col-12 col-lg-5">
             <h6 class="text-uppercase my-3 text-danger">Newsletter</h6>
 
-            <div class="newsletter-container row border">
+            <div class="newsletter-container d-flex border flex-wrap">
               <div class="col-12 col-md-6 left"></div>
-              <div class="col-12 col-md-6 bg-light p-4">
+              <div class="col-12 col-md-6 bg-light p-4 align-self-center text-center text-lg-left">
                 <h4 class="font-weight-bold pb-2">The Starting 5</h4>
                 <p class="text-muted pb-2">
                   See why nearly a quarter of a million subscribers begin their day with the Starting 5.
@@ -1682,24 +1680,24 @@
     <footer class="main-footer container-fluid p-4">
       <div class="row pb-md-2">
         <div class="col-12 col-md-8">
-          <div class="row">
-            <a href="#" class="col-md-6">
-              <img src="./assets/images/newsweek-logo-red.svg" alt="Newsweek" class="img-fluid col-7 col-md-12 p-0">
+          <div class="d-flex flex-column flex-md-row">
+            <a href="#" class="">
+              <img src="./assets/images/newsweek-logo-red.svg" alt="Newsweek" class="footer-logo col-7 col-md-12 p-0">
             </a>
-            <p class="col-md-6 small align-self-end m-0 text-muted pt-2">&copy; 2020 NEWSWEEK DIGITAL LLC</p>
+            <p class="pl-0 pl-md-3 small m-0 text-muted pt-2 align-self-md-end">&copy; 2020 NEWSWEEK DIGITAL LLC</p>
           </div>
         </div>
-        <div class="col-12 col-md-4 p-0">
-          <ul class="list-unstyled d-flex h4 mb-1 justify-content-md-end">
-            <li class="p-1"><a href="#" class="text-black-50"><span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false"></span></a></li>
-            <li class="p-1"><a href="#" class="text-black-50"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
-            <li class="p-1"><a href="#" class="text-black-50"><span class="iconify" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
-            <li class="p-1"><a href="#" class="text-black-50"><span class="iconify h2 m-0" data-icon="typcn:social-tumbler" data-inline="false"></span></a></li>
-            <li class="p-1"><a href="#" class="text-black-50"><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
+        <div class="col-12 col-md-4 align-self-end">
+          <ul class="list-unstyled d-flex h4 mb-1 justify-content-md-end mb-md-0 align-items-end">
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0" id="tumbler-icon"><a href="#" class="text-black-50"><span class="iconify" data-icon="typcn:social-tumbler" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
           </ul>
         </div>
       </div>
-      <div class="row border-top pt-3 d-md-flex">
+      <div class="row border-top pt-3 d-md-flex flex-nowrap">
         <div class="text-muted font-weight-bold mx-3">
           Editions:
         </div>
