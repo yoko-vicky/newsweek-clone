@@ -1,6 +1,7 @@
 // for navbar to be sticky on certain offset of page.
 window.onscroll = function () {
   stickyNav();
+  stickyStories();
 };
 
 var navbar = document.getElementById("navbar");
@@ -15,12 +16,23 @@ function stickyNav() {
   }
 }
 
-var more_stories = document.getElementById('more-stories');
+// to make the center more stories sticky
+if (window.innerWidth >= 1024){
+  var more_stories = document.getElementById('more-stories');
+  var middle_height = more_stories.offsetTop + more_stories.offsetHeight;
+  var magzine = document.getElementById('in-the-magazine');
+  var browser_height = window.innerHeight;
 
-function stickyStories() {
-  if (more_stories.offsetTop >= window.pageYOffset || window.pageYOffset <= offsetBottom) {
-    more_stories.classList.add('position-fixed');
-  } else {
-    more_stories.classList.remove('position-fixed');
+  function stickyStories() {
+    if (window.pageYOffset >= (middle_height - browser_height) && window.pageYOffset <= (magzine.offsetTop - browser_height)) {
+      more_stories.classList.add('position-fixed');
+      more_stories.classList.remove('position-absolute');
+    } else if (window.pageYOffset >= (middle_height - browser_height)) {
+      more_stories.classList.remove('position-fixed');
+      more_stories.classList.add('position-absolute');
+    } else {
+      more_stories.classList.remove('position-absolute');
+      more_stories.classList.remove('position-fixed');
+    }
   }
 }

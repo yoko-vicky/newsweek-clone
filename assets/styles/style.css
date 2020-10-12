@@ -173,8 +173,14 @@ body {
 
 .more-stories.position-fixed {
   background-color: #fff;
-  top: 53px;
   width: 40%;
+  bottom: 0;
+}
+
+.more-stories.position-absolute {
+  background-color: #fff;
+  bottom: 0;
+  width: 95%;
 }
 
 @media (min-width: 481px) {
