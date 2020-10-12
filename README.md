@@ -14,11 +14,11 @@ This project is about building a [news week](https://www.newsweek.com/) home pag
 
 The features of this project are listed as below:
 1. The website is completely responsive with different brekpoint provided by bootstrap:
-  - Below 575px for mobile screen
-  - In between 575px and 768px larger mobile screen.
-  - In between 768px and 992px for medium screen (tablet).
-  - In between 992px and 1200px for laptop and desktop.
-  - Above 1200px for large screen.
+    - Below 575px for mobile screen
+    - In between 575px and 768px larger mobile screen.
+    - In between 768px and 992px for medium screen (tablet).
+    - In between 992px and 1200px for laptop and desktop.
+    - Above 1200px for large screen.
 
 2. The site contains information:
     - Header with site navigation links.
@@ -58,9 +58,9 @@ The features of this project are listed as below:
 
 👤 **Yoko Saka / Vicky**
 
-    - GitHub: [@yocosaka](https://github.com/yocosaka)
-    - Twitter: [@yocosaka](https://twitter.com/yocosaka)
-    - LinkedIn: [Yoko Saka](https://www.linkedin.com/in/yokosaka)
+- GitHub: [@yocosaka](https://github.com/yocosaka)
+- Twitter: [@yocosaka](https://twitter.com/yocosaka)
+- LinkedIn: [Yoko Saka](https://www.linkedin.com/in/yokosaka)
 
 👤 **Dipesh Bajgain**
 

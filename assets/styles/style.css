@@ -199,7 +199,6 @@ body {
 
   .newsletter-container .left {
     height: unset;
-    background-size: 230%;
   }
 
   .footer-links * {
@@ -249,6 +248,7 @@ body {
   .magazine-image {
     height: 262px;
   }
+
   #editors-pick img {
     height: 175px;
   }
