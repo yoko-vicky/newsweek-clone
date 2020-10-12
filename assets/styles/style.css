@@ -22,7 +22,7 @@ body {
 /* for fixed navbar style */
 #navbar.fixed-top .info,
 #navbar.fixed-top #sideMenu {
-  display: none!important;
+  display: none !important;
 }
 
 #navbar.fixed-top .navbar-brand img {
@@ -30,7 +30,7 @@ body {
 }
 
 #navbar.fixed-top .main-navbar {
-  padding: 10px!important;
+  padding: 10px !important;
 }
 
 #navbar.fixed-top .navbar-toggler {
@@ -169,6 +169,12 @@ body {
 
 .footer-logo {
   max-width: 236px;
+}
+
+.more-stories.position-fixed {
+  background-color: #fff;
+  top: 53px;
+  width: 40%;
 }
 
 @media (min-width: 481px) {
