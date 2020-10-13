@@ -1,139 +1,306 @@
-@import "general.css";
-
-:root {
-  --color-primary: #f72210;
-  --color-secondary: #ffe400;
-  --color-tertiary: #3581f4;
-  --color-dark-grey: #333;
-  --color-medium-grey: rgba(3, 3, 3, 0.4);
-  --color-light-grey1: #807f84;
-  --color-light-grey2: #d9d9d9;
-  --color-light-grey3: #e2e2e2;
-  --color-light-grey4: #ddd;
-  --color-light-grey5: #f4f5f7;
-}
-
 body {
-  background-color: #f4f5f6;
+  font-family: "Roboto", sans-serif;
 }
 
 .body-container {
-  width: 100%;
   max-width: 1310px;
-  margin: 0 auto;
-  background-color: white;
-}
-
-.navbar {
-  background-color: var(--color-primary);
-}
-
-.navbar * {
-  color: white;
 }
 
 .navbar-brand img {
+  width: 132px;
+}
+
+.subscription-btn {
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.user-icon {
+  opacity: 0.75;
+}
+
+/* for fixed navbar style */
+#navbar.fixed-top .info,
+#navbar.fixed-top #sideMenu {
+  display: none !important;
+}
+
+#navbar.fixed-top .navbar-brand img {
+  width: 132px;
+}
+
+#navbar.fixed-top .main-navbar {
+  padding: 10px !important;
+}
+
+#navbar.fixed-top .navbar-toggler {
   display: block;
-  width: 160px;
 }
 
-main,
-.main-footer {
-  font-size: 30px;
-  font-weight: bold;
+.top-navbar {
+  top: -10px;
+  width: 90%;
+  border-radius: 0 20px 0 0;
 }
 
-/* INSIDE TOP CONTENTS WRAPPER */
-#top-story,
-#featured-stories,
-#the-debate,
-#opinion,
-#articles-1,
-#more-stories,
-#my-turn,
-#articles-2,
-#in-the-magazine,
-#editors-pick,
-#articles-3,
-#promotion,
-.main-footer {
-  padding: 40px;
-  /* border: 3px solid; */
-  color: white;
-  min-height: 10em;
+.search-icon {
+  right: -10px;
 }
 
-#top-story {
-  background-color: #e02020;
-}
-#featured-stories {
-  background-color: #f7b500;
-  min-height: 20em;
-}
-#the-debate {
-  background-color: #3b76d8;
-}
-#opinion {
-  background-color: #32c5ff;
-  min-height: 15em;
-}
-#articles-1 {
-  background-color: #6dd400;
-  min-height: 20em;
-}
-#more-stories {
-  background-color: #b620e0;
-  min-height: 20em;
-}
-#my-turn {
-  background-color: #ff00b9;
-}
-#articles-2 {
-  background-color: #ff8bdf;
-  min-height: 20em;
+.bottom-navbar .nav-link {
+  letter-spacing: -0.5px;
 }
 
-/* OUTSIDE TOP CONTENTS WRAPPER */
-#in-the-magazine {
-  background-color: #fa9000;
-  min-height: 10em;
-}
-#editors-pick {
-  background-color: #fa5600;
-  min-height: 17em;
-}
-#articles-3 {
-  background-color: #2ed5c9;
-  min-height: 25em;
-}
-#promotion {
-  background-color: black;
-}
-.main-footer {
-  background-color: #807f84;
-  min-height: 5em;
+.category {
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  left: 0;
 }
 
-/* Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap */
-
-/* Small (sm) devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+.paragraph {
+  font-size: 13px;
+  line-height: 1.4;
 }
 
-/* Medium (md) devices (tablets, 768px and up) */
+.debate-image {
+  width: 63px;
+  height: 63px;
+}
+
+.byline {
+  font-size: 14px;
+}
+
+.debate-wrap {
+  border-top: 4px solid #d9d9d9;
+  border-bottom: 4px solid #d9d9d9;
+}
+
+.deco {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-vs {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.deco::before,
+.deco::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #d9d9d9;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.deco::before {
+  top: 15px;
+}
+
+.deco::after {
+  top: 17px;
+}
+
+.small-img {
+  height: 120px;
+  object-fit: cover;
+}
+
+.more-stories .stories-img-wrapper {
+  flex: 0 0 95px;
+}
+
+.article-3 .stories-img-wrapper {
+  flex: 0 0 110px;
+}
+
+.stories-img {
+  height: 95px;
+  object-fit: cover;
+}
+
+.signup-card {
+  max-width: 300px;
+}
+
+.signup-card .icon-n {
+  font-size: 80px;
+}
+
+.cover-img-wrapper {
+  min-height: 230px;
+}
+
+.cover-img:first-child {
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.cover-img:nth-child(2) {
+  left: 60%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+
+.newsletter-container .left {
+  background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 170px;
+}
+
+.email-input {
+  height: unset;
+}
+
+#tumbler-icon {
+  transform: scale(1.4);
+}
+
+.footer-logo {
+  max-width: 236px;
+}
+
+.more-stories.position-fixed {
+  background-color: #fff;
+  width: 40%;
+  bottom: 0;
+}
+
+.more-stories.position-absolute {
+  background-color: #fff;
+  bottom: 0;
+  width: 95%;
+}
+
+.signup-btn,
+.email-input {
+  max-height: 38px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.signup-btn {
+  border: 2px solid #dc3545;
+}
+
+@media (min-width: 481px) {
+  .article-3 .stories-img-wrapper {
+    flex: 0 0 258px;
+  }
+}
+
 @media (min-width: 768px) {
-  #top-contents-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+  .subscription-btn {
+    font-size: 15px;
+  }
+
+  .paragraph {
+    font-size: 15px;
+  }
+
+  .magazine-image {
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .magazine-category-text {
+    font-size: 13px;
+  }
+
+  .magazine-title {
+    font-size: 19px;
+  }
+
+  .cover-img:first-child {
+    left: 30%;
+  }
+
+  .cover-img:nth-child(2) {
+    left: 54%;
+  }
+
+  .newsletter-container .left {
+    height: unset;
+  }
+
+  .footer-links * {
+    font-size: 14px;
+  }
+
+  .footer-links li {
+    border-right: 1px solid #d9d9d9;
+  }
+
+  .article-3 .stories-img-wrapper {
+    flex: 0 0 95px;
+  }
+
+  #articles-2 {
+    max-width: 330px;
+  }
+
+  #editors-pick img {
+    height: 236px;
+    object-fit: cover;
+  }
+
+  .copyright {
+    line-height: 1;
   }
 }
 
 /* Large (lg) devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .navbar-brand img {
+    width: 396px;
+  }
+
+  .magazine-image {
+    height: 210px;
+  }
+
+  #editors-pick img {
+    height: 140px;
+  }
+
+  .newsletter-container,
+  .subscribe-container {
+    min-height: 360px;
+  }
+
+  .cover-img:first-child {
+    left: 50%;
+  }
+
+  .cover-img:nth-child(2) {
+    left: 70%;
+  }
 }
 
 /* Extra (xl) large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .magazine-image {
+    height: 262px;
+  }
+
+  #editors-pick img {
+    height: 175px;
+  }
+
+  .more-stories.position-fixed {
+    width: 540px;
+  }
 }

@@ -1,127 +1,1721 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <!-- Fontawosome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
   <!-- Custom style -->
   <link rel="stylesheet" href="./assets/styles/style.css">
 
-  <title>My Newsweek Test</title>
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <title>Newsweek Homepage</title>
 </head>
 
-<body>
-  <div class="body-container">
+<body class="bg-light">
+  <div class="body-container w-100 mx-auto my-0 bg-white">
     <!-- header -->
     <header class="main-header">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="./assets/images/Newsweek_Logo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse">
-          <div class="info">
-            <a href="#">14° Saitama, JP</a>
-            <span>Wed, Oct 07, 2020</span>
+
+      <nav class="navbar navbar-expand-lg navbar-light flex-lg-column p-0 mr-0" id="navbar">
+        <div class="d-flex justify-content-between w-100 bg-danger py-2 px-3 py-lg-4 main-navbar">
+          <div class="info d-none d-lg-block col" id="nav-info">
+            <a href="#" class="d-inline-block text-white my-2 d-flex align-items-center">14° Saitama, JP<span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span></a>
+            <p class="mb-0 text-white">Wed, Oct 07, 2020</p>
           </div>
-          <ul class="nav">
-            <a class="nav-link active" href="#"><i class="fas fa-user"></i> Login</a>
-            <a class="nav-link" href="#">Subscription offers</a>
+          <div class="col p-0">
+            <a class="navbar-brand d-block m-0 p-0" href="#">
+              <img src="./assets/images/Newsweek_Logo.svg" alt="newsweek logo">
+            </a>
+          </div>
+          <div class="col align-self-end col-xs-8 d-flex justify-content-end align-items-center mb-1 p-0 ml-3">
+            <a class="text-uppercase text-white font-weight-bold mr-2" href="#"><span class="user-icon iconify d-md-none h4 m-0" data-icon="bx:bxs-user" data-inline="false"></span><span class="d-none d-md-block">Login</span></a>
+            <a class="subscription-btn text-uppercase btn btn-warning font-weight-bold py-1 d-flex mr-2 mr-lg-0 align-items-center rounded-pill" href="#">Subscription offers <span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span></a>
+
+            <button class="navbar-toggler m-0 pl-3 py-0 pr-0 border-0" type="button" data-toggle="collapse" data-target="#sideMenu" aria-controls="sideMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="iconify text-white" data-icon="bytesize:menu" data-inline="false"></span>
+            </button>
+          </div>
+        </div>
+
+        <div id="sideMenu" class="collapse navbar-collapse flex-lg-column w-100">
+          <ul class="navbar-nav mr-auto font-weight-bold px-3 pt-3 top-navbar position-relative bg-white">
+            <li class="nav-item">
+              <a href="#" class="text-dark px-2 border-right">U.S.</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">Texh & Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">Newsgeek</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">The Debate</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap border-right" href="#">Vantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-dark px-2 text-nowrap" href="#">Weather</a>
+            </li>
+            <li class="nav-item">
+              <form class="form-inline d-flex position-relative">
+                <input class="search w-100 border-0 bg-white text-dark" type="search" placeholder="Search" aria-label="Search">
+                <button class="search-icon position-absolute h5 border-0 bg-transparent" type="submit">
+                  <span class="iconify" data-icon="clarity:search-line" data-inline="false"></span>
+                </button>
+              </form>
+            </li>
           </ul>
+
+          <ul class="navbar-nav mr-auto border-top border-bottom w-100 px-4 text-uppercase bottom-navbar">
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link h6 active" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link h6" href="#">Donald Tramp</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link h6" href="#">Joe Biden</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link h6" href="#">Stimulus package</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link h6" href="#">Colonavirus</a>
+            </li>
+            <li class="nav-item">
+              <a class="flex-sm-fill text-sm-center nav-link h6" href="#">2020 elction</a>
+            </li>
+          </ul>
+
         </div>
       </nav>
-      <div id="sideMenu">
-        <nav class="nav nav-pills flex-column flex-sm-row">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">U.S.</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">World</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Business</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Texh & Science</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Culture</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Newsgeek</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Sports</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Health</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">The Debate</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Vantage</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Weather</a>
-        </nav>
-        <nav class="nav nav-pills flex-column flex-sm-row">
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Trending</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Donald Tramp</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Joe Biden</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Stimulus package</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">Colonavirus</a>
-          <a class="flex-sm-fill text-sm-center nav-link" href="#">2020 elction</a>
-        </nav>
-      </div>
     </header>
     <!-- main contents -->
     <main>
-      <div id="top-contents-wrapper">
-        <!-- top story -->
-        <section id="top-story">
-          TOP STORY
-        </section>
-        <!-- featured story -->
-        <section id="featured-stories">
-          FEATURED STORIES
-        </section>
-        <!-- the debate -->
-        <section id="the-debate">
-          THE DEBATE
-        </section>
-        <!-- opinion -->
-        <section id="opinion">
-          OPINION
-        </section>
-        <!-- article group 1 -->
-        <div id="articles-1">
-          ARTICLES-1
-        </div>
-        <!-- more stories -->
-        <section id="more-stories">
-          MORE STORIES
-        </section>
-        <!-- my turn -->
-        <section id="my-turn">
-          MY TURN
-        </section>
-        <!-- article group 2 -->
-        <div id="articles-2">
-          ARTICLES 2
+
+      <div class="container-fluid p-3">
+        <div class="row">
+          <div class="col-12 col-lg-9">
+
+            <div class="row">
+              <div class="col-12 col-md-5 order-1 order-md-0" id="left-elements">
+
+                <!-- Feature stories -->
+                <section id="featured-stories">
+                  <h6 class="text-uppercase text-muted">Featured stories</h6>
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1647998/biden-vs-trump.jpg?w=591&h=364&f=812e56c2b8c26016f97ff5e4e923478f" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="py-2">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Trump Won't Participate in Virtual Debate Against Biden, Will Hold Rally</a>
+                      </h5>
+                      <p class="paragraph">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                    </div>
+                  </article>
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1647998/biden-vs-trump.jpg?w=591&h=364&f=812e56c2b8c26016f97ff5e4e923478f" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="py-2">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Trump Won't Participate in Virtual Debate Against Biden, Will Hold Rally</a>
+                      </h5>
+                      <p class="paragraph">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                    </div>
+                  </article>
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1647998/biden-vs-trump.jpg?w=591&h=364&f=812e56c2b8c26016f97ff5e4e923478f" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="py-2">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Trump Won't Participate in Virtual Debate Against Biden, Will Hold Rally</a>
+                      </h5>
+                      <p class="paragraph">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                    </div>
+                  </article>
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1647998/biden-vs-trump.jpg?w=591&h=364&f=812e56c2b8c26016f97ff5e4e923478f" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="py-2">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Trump Won't Participate in Virtual Debate Against Biden, Will Hold Rally</a>
+                      </h5>
+                      <p class="paragraph">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                    </div>
+                  </article>
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1647998/biden-vs-trump.jpg?w=591&h=364&f=812e56c2b8c26016f97ff5e4e923478f" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="py-2">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Trump Won't Participate in Virtual Debate Against Biden, Will Hold Rally</a>
+                      </h5>
+                      <p class="paragraph">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                    </div>
+                  </article>
+                </section>
+
+
+                <!-- Article 1 -->
+                <div class="d-none d-md-block articles-1">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="p-3 border">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                      </h5>
+                      <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                    </div>
+                  </article>
+
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="p-3 border">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                      </h5>
+                      <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                    </div>
+                  </article>
+
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Featured stories image">
+                      </a>
+                      <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="p-3 border">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                      </h5>
+                      <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+              <div class="col-12 col-md-7 order-0 order-md-1 position-relative" id="middle-elements">
+                <!-- top story -->
+                <section id="top-story">
+                  <h6 class="text-uppercase text-muted">Top story</h6>
+                  <div class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1647998/biden-vs-trump.jpg?w=591&h=364&f=812e56c2b8c26016f97ff5e4e923478f" alt="top stories image">
+                      </a>
+                      <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                    </div>
+                    <div class="py-2">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark"> Trump Won't Participate in Virtual Debate Against Biden, Will Hold Rally</a>
+                      </h5>
+                      <p class="paragraph">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="d-none d-md-block">
+
+                  <div class="my-turn">
+
+                    <h6 class="text-uppercase text-muted">My Turn</h6>
+
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="card mb-3 border-0">
+                          <div class="wrap position-relative">
+                            <a href="#">
+                              <img class="card-img-top small-img" src="https://d.newsweek.com/en/full/1647856/castle-renovation-home-improvements-property-home.webp" alt="Image alternative text">
+                            </a>
+                          </div>
+                          <div class="py-2">
+                            <p class="paragraph">
+                              <a href="#" class="font-weight-bold text-muted text-decoration-none">'We Renovated a 470-Year-Old Castle'</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-4">
+                        <div class="card mb-3 border-0">
+                          <div class="wrap position-relative">
+                            <a href="#">
+                              <img class="card-img-top small-img" src="https://d.newsweek.com/en/full/1646981/wildlife-coyote-peterson-stings-bees.webp" alt="Image alternative text">
+                            </a>
+                          </div>
+                          <div class="py-2">
+                            <p class="paragraph">
+                              <a href="#" class="font-weight-bold text-muted text-decoration-none">'We Renovated a 470-Year-Old Castle'</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-4">
+                        <div class="card mb-3 border-0">
+                          <div class="wrap position-relative">
+                            <a href="#">
+                              <img class="card-img-top small-img" src="https://d.newsweek.com/en/full/1647856/castle-renovation-home-improvements-property-home.webp" alt="Image alternative text">
+                            </a>
+                          </div>
+                          <div class="py-2">
+                            <p class="paragraph">
+                              <a href="#" class="font-weight-bold text-muted text-decoration-none">'We Renovated a 470-Year-Old Castle'</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="culture">
+
+                    <h6 class="text-uppercase text-muted">Culture & Travel</h6>
+
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <div class="card mb-3 border-0">
+                          <div class="wrap position-relative">
+                            <a href="#"><img class="card-img-top small-img" src="https://d.newsweek.com/en/full/1645381/100-best-rock-albums-all-time-according-critics.webp" alt="Image alternative text"></a>
+                            <a href="#" class="text-dark p-1 category small position-absolute text-uppercase font-weight-bold">Music</a>
+                          </div>
+                          <div class="py-2">
+                            <p class="paragraph">
+                              <a href="#" class="font-weight-bold text-muted text-decoration-none">100 Best Rock Albums of All Time, According to Critics</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-4">
+                        <div class="card mb-3 border-0">
+                          <div class="wrap position-relative">
+                            <a href="#">
+                              <img class="card-img-top small-img" src="https://d.newsweek.com/en/full/1641887/cul-map-wes-anderson-white-cyclon-banner.webp" alt="Image alternative text"></a>
+                            <a href="#" class="text-dark p-1 category small position-absolute text-uppercase font-weight-bold">Wes Andreson</a>
+                          </div>
+                          <div class="py-2">
+                            <p class="paragraph">
+                              <a href="#" class="font-weight-bold text-muted text-decoration-none">100 Best Rock Albums of All Time, According to Critics</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-4">
+                        <div class="card mb-3 border-0">
+                          <div class="wrap position-relative">
+                            <a href="#">
+                              <img class="card-img-top small-img" src="https://d.newsweek.com/en/full/1647856/castle-renovation-home-improvements-property-home.webp" alt="Image alternative text"></a>
+                            <a href="#" class="text-dark p-1 category small position-absolute text-uppercase font-weight-bold">U.S.</a>
+                          </div>
+                          <div class="py-2">
+                            <p class="paragraph">
+                              <a href="#" class="font-weight-bold text-muted text-decoration-none">100 Best Rock Albums of All Time, According to Critics</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- More stories -->
+                <section class="d-none d-md-block more-stories" id="more-stories">
+                  <h6 class="text-uppercase text-muted border-bottom pb-2">More stories</h6>
+                  <div class="more-stories-wrapper">
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647175/lindsey-graham.jpg" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">Former CIA Director Warns of End to International Alliances if Trump Wins</a></h6>
+                        <p class="paragraph text-muted mb-0">Graham has served as a South Carolina senator since 2003 but several polls show the incumbent senator tied with Harrison.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                    <article class="d-flex py-2 border-bottom">
+                      <a href="#" class="stories-img-wrapper">
+                        <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="More stories image" class="img-fluid stories-img">
+                      </a>
+                      <div class="pl-3">
+                        <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                        <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-3" id="right-elements">
+            <!-- the debate -->
+            <section id="the-debate" class="mb-4">
+              <h6 class="text-uppercase text-muted">The debate</h6>
+              <div class="debate-wrap position-relative">
+                <div class="top-debate d-flex justify-content-between align-items-center py-3">
+                  <img src="https://d.newsweek.com/en/full/1533434/swalwell2.png?w=150&h=150&f=b4925d53fde4dc49edb774ea5fdbadbd" alt="The debate author first image" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Eric Swalwell</a></div>
+                  </div>
+                </div>
+                <div class="bottom-debate d-flex justify-content-between align-items-center py-3 mt-2">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Eric Swalwell</a></div>
+                  </div>
+                  <img src="https://d.newsweek.com/en/full/1533434/swalwell2.png?w=150&h=150&f=b4925d53fde4dc49edb774ea5fdbadbd" alt="The debate author second image" class="debate-image">
+                </div>
+                <div class="deco w-100 position-absolute">
+                  <div class="c-vs bg-dark text-white d-flex justify-content-center align-items-center font-weight-bold rounded-circle position-relative">VS</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- the opinion -->
+            <section id="opinion">
+              <h6 class="text-uppercase text-muted">Opinion</h6>
+              <div class="opinion-wrapper">
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1565352/aimee-allison.png?w=63&h=63&f=d992b291970adc50b2ef89b19cf632fa" alt="Opinion author image" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The VP Debate Will Be the First and Last Chance to Hear About the Issues</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Aimee Allison</a></div>
+                  </div>
+                </div>
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1646800/josh-hammer.png?w=63&h=63&f=cd14b8675c99d70b0e9c9d28906c5d29" alt=" Josh Hammer" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">Are Bill De Blasio and Andrew Cuomo Targeting New York City's Jews?</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Josh Hammer</a></div>
+                  </div>
+                </div>
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1602706/alan-dershowitz.png?w=63&h=63&f=d83ee0f0a2a958ae747f9793d8d73562" alt="Alan Dershowitz" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">Supreme Court Upholds Restriction on Mail-in Votes</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Alan Dershowitz</a></div>
+                  </div>
+                </div>
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1604725/tom-rogers-timothy-e-wirth.png?w=63&h=63&f=c9021798f8a0bdb4f9c6625cd060f5ab" alt="Opinion author image" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">Amid Trump's Post-Election Chaos, Hold Lawyers to Account on the Vote Count</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Tom Rogers and Timothy E. Wirth</a></div>
+                  </div>
+                </div>
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1636740/seth-j-frantzman.png?w=63&h=63&f=b28018ca02b216a4f125ef4d5e90dd7f" alt="Opinion author image" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">How Azerbaijan's Drones Show what the Future War Looks Like</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Seth J. Frantzman</a></div>
+                  </div>
+                </div>
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1647238/sabrina-elba.png?w=63&h=63&f=63b944dbb3a1097bd335a85aac336563" alt="Opinion author image" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">COVID Is Reversing Decades of Progress for Rural Women and Girls</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Sabrina Dhowre Elba</a></div>
+                  </div>
+                </div>
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1647237/maya-foa.png?w=63&h=63&f=76105823b78398637b0b0e9295a0477f" alt="Opinion author image" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">Saudi Bid to Rejoin Human Rights Council Can be Used as Leverage for Change</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Maya Foa</a></div>
+                  </div>
+                </div>
+                <div class="top-debate d-flex justify-content-between py-3 border-bottom">
+                  <img src="https://d.newsweek.com/en/full/1597148/newt-gingrich-claire-christensen.png?w=63&h=63&f=794a34933bae589ee025cb6a663ff0c5" alt="Opinion author image" class="debate-image">
+                  <div class="debate-info pl-3 flex-grow-1">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">China Is Launching the Largest IPO in History. Here's Why It's a Problem</a></h6>
+                    <div class="byline text-uppercase"><span class="text-muted mr-1">By</span><a href="#" class="text-muted font-weight-bold">Newt Gingrich and Claire Christensen</a></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 1 -->
+            <div class="d-md-none articles-1">
+              <article class="card mb-3 border-0">
+                <div class="wrap position-relative">
+                  <a href="#">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Democrats Pressure Joe Biden">
+                  </a>
+                  <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                </div>
+                <div class="p-3 border">
+                  <h5 class="card-title font-weight-bold mb-2">
+                    <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                  </h5>
+                  <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                </div>
+              </article>
+
+              <article class="card mb-3 border-0">
+                <div class="wrap position-relative">
+                  <a href="#">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Democrats Pressure Joe Biden">
+                  </a>
+                  <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                </div>
+                <div class="p-3 border">
+                  <h5 class="card-title font-weight-bold mb-2">
+                    <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                  </h5>
+                  <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                </div>
+              </article>
+
+              <article class="card mb-3 border-0">
+                <div class="wrap position-relative">
+                  <a href="#">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Democrats Pressure Joe Biden">
+                  </a>
+                  <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                </div>
+                <div class="p-3 border">
+                  <h5 class="card-title font-weight-bold mb-2">
+                    <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                  </h5>
+                  <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- more stories -->
+            <section class="d-md-none more-stories">
+              <h6 class="text-uppercase text-muted border-bottom pb-2">More stories</h6>
+              <div class="more-stories-wrapper">
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647175/lindsey-graham.jpg" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">Former CIA Director Warns of End to International Alliances if Trump Wins</a></h6>
+                    <p class="paragraph text-muted mb-0">Graham has served as a South Carolina senator since 2003 but several polls show the incumbent senator tied with Harrison.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+                <article class="d-flex py-2 border-bottom">
+                  <a href="#" class="stories-img-wrapper">
+                    <img src="https://d.newsweek.com/en/full/1647999/kamala-harris-vice-presidential-debate-getty.webp" alt="Image alternative text" class="img-fluid stories-img">
+                  </a>
+                  <div class="pl-3">
+                    <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    <p class="paragraph text-muted mb-0">"That's not what debating all about. You sit behind a computer and do a debate—it's ridiculous," the president said.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="d-md-none">
+
+              <div class="my-turn">
+
+                <h6 class="text-uppercase text-muted">My Turn</h6>
+
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div class="card mb-3 border-0">
+                      <div class="wrap position-relative">
+                        <a href="#">
+                          <img class="card-img-top" src="https://d.newsweek.com/en/full/1647856/castle-renovation-home-improvements-property-home.webp" alt="We Renovated a 470-Year-Old Castle">
+                        </a>
+                      </div>
+                      <div class="py-2">
+                        <p class="paragraph">
+                          <a href="#" class="font-weight-bold text-muted text-decoration-none">'We Renovated a 470-Year-Old Castle'</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <div class="card mb-3 border-0">
+                      <div class="wrap position-relative">
+                        <a href="#">
+                          <img class="card-img-top" src="https://d.newsweek.com/en/full/1646981/wildlife-coyote-peterson-stings-bees.webp" alt="We Renovated a 470-Year-Old Castle">
+                        </a>
+                      </div>
+                      <div class="py-2">
+                        <p class="paragraph">
+                          <a href="#" class="font-weight-bold text-muted text-decoration-none">'We Renovated a 470-Year-Old Castle'</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <div class="card mb-3 border-0">
+                      <div class="wrap position-relative">
+                        <a href="#">
+                          <img class="card-img-top" src="https://d.newsweek.com/en/full/1647856/castle-renovation-home-improvements-property-home.webp" alt="We Renovated a 470-Year-Old Castle">
+                        </a>
+                      </div>
+                      <div class="py-2">
+                        <p class="paragraph">
+                          <a href="#" class="font-weight-bold text-muted text-decoration-none">'We Renovated a 470-Year-Old Castle'</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="culture">
+
+                <h6 class="text-uppercase text-muted">Culture & Travel</h6>
+
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <article class="card mb-3 border-0">
+                      <div class="wrap position-relative">
+                        <a href="#">
+                          <img class="card-img-top" src="https://d.newsweek.com/en/full/1645381/100-best-rock-albums-all-time-according-critics.webp" alt="100 best rock albums"></a>
+                        <a href="#" class="text-dark p-1 category small position-absolute text-uppercase font-weight-bold">Music</a>
+
+                      </div>
+                      <div class="py-2">
+                        <p class="paragraph">
+                          <a href="#" class="font-weight-bold text-muted text-decoration-none">100 Best Rock Albums of All Time, According to Critics</a>
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <article class="card mb-3 border-0">
+                      <div class="wrap position-relative">
+                        <a href="#">
+                          <img class="card-img-top" src="https://d.newsweek.com/en/full/1641887/cul-map-wes-anderson-white-cyclon-banner.webp" alt="100 best rock albums"></a>
+                        <a href="#" class="text-dark p-1 category small position-absolute text-uppercase font-weight-bold">Wes Andreson</a>
+                      </div>
+                      <div class="py-2">
+                        <p class="paragraph">
+                          <a href="#" class="font-weight-bold text-muted text-decoration-none">100 Best Rock Albums of All Time, According to Critics</a>
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                    <article class="card mb-3 border-0">
+                      <div class="wrap position-relative">
+                        <a href="#">
+                          <img class="card-img-top" src="https://d.newsweek.com/en/full/1647856/castle-renovation-home-improvements-property-home.webp" alt="100 Best Rock Albums"></a>
+                        <a href="#" class="text-dark p-1 category small position-absolute text-uppercase font-weight-bold">U.S.</a>
+                      </div>
+                      <div class="py-2">
+                        <p class="paragraph">
+                          <a href="#" class="font-weight-bold text-muted text-decoration-none">100 Best Rock Albums of All Time, According to Critics</a>
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <!-- article group 2 -->
+            <div id="articles-2" class="mx-auto my-4">
+              <article class="card mb-3 border-0">
+                <div class="wrap position-relative">
+                  <a href="#">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1644076/americas-best-nursing-homes-2020.png" alt="America's Best Nursing Homes 2021">
+                  </a>
+                  <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                </div>
+                <div class="p-3 border">
+                  <h5 class="card-title font-weight-bold mb-2">
+                    <a href="#" class="text-dark">America's Best Nursing Homes 2021</a>
+                  </h5>
+                  <p class="paragraph mb-0">In partnership with Statista, we established a ranking providing information and insights to help you during this challenging time.</p>
+                </div>
+              </article>
+
+              <div class="card border-0 bg-light signup-card mt-0 mb-3 mx-auto py-md-1 px-md-2">
+                <div class="p-3 border bg-light">
+                  <div class="text-uppercase d-flex align-items-center">
+                    <span class="iconify text-danger icon-n mr-1" data-icon="mdi:alpha-n-box" data-inline="false"></span>
+                    <span class="font-weight-bold">START YOUR DAY WITH OUR TOP 5 ARTICLES</span>
+                  </div>
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="email" placeholder="Email Address" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block text-uppercase font-weight-bold p-1">
+                      Free sign up
+                      <span class="iconify ml-1" data-icon="ant-design:right-outlined" data-inline="false"></span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <article class="card mb-3 border-0">
+                <div class="wrap position-relative">
+                  <a href="#">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1619000/florida-polytechnic-university.jpg" alt="Democrats Pressure Joe Biden">
+                  </a>
+                  <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                </div>
+                <div class="p-3 border">
+                  <h5 class="card-title font-weight-bold mb-2">
+                    <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                  </h5>
+                  <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                </div>
+              </article>
+
+              <article class="card mb-3 border-0">
+                <div class="wrap position-relative">
+                  <a href="#">
+                    <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Democrats Pressure Joe Biden">
+                  </a>
+                  <a href="#" class="text-info py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+                </div>
+                <div class="p-3 border">
+                  <h5 class="card-title font-weight-bold mb-2">
+                    <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a>
+                  </h5>
+                  <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
         </div>
       </div>
 
-      <section id="in-the-magazine">
-        IN THE MAGAZINE
+
+      <section class="container-fluid" id="in-the-magazine">
+        <h5 class="text-uppercase text-center border-bottom mb-3"><span class="iconify text-danger icon-n h1 mr-1" data-icon="mdi:alpha-n-box" data-inline="false"></span>In the magazine</h5>
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative mt-3">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1643943/cover-october-09-16-2020.jpg" alt="Cover image">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold magazine-category-text">October 16 ISSUE</a>
+              </div>
+              <div class="p-2 bg-light">
+                <a href="#" class="text-uppercase font-weight-bold text-dark d-flex d-md-block d-lg-flex align-items-center justify-content-center h6 mb-md-0 text-nowrap">See All Features<span class="iconify ml-1 d-md-block text-center w-100 ml-md-0 mt-md-1" data-icon="ant-design:right-outlined" data-inline="false"></span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap">
+                <a href="#">
+                  <img class="card-img-top magazine-image" src="https://d.newsweek.com/en/full/1641924/fe-rbg-banner.jpg" alt="Joe Biden Pick for the Supreme Court">
+                </a>
+                <div class="category text-uppercase font-weight-bold d-flex align-items-center my-2">
+                  <a href="#" class="bg-danger px-1 text-white mr-2">Features</a>
+                  <span class="text-danger">Politics</span>
+                </div>
+              </div>
+              <h6 class="card-title font-weight-bold mb-2 magazine-title"><a href="#" class="text-dark">If Elected, Who Would Joe Biden Pick for the Supreme Court?</a></h6>
+            </article>
+          </div>
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap">
+                <a href="#">
+                  <img class="card-img-top magazine-image" src="https://d.newsweek.com/en/full/1641173/justice-ruth-bader-ginsburg.jpg" alt="Joe Biden Pick for the Supreme Court">
+                </a>
+                <div class="category text-uppercase font-weight-bold d-flex align-items-center my-2">
+                  <a href="#" class="bg-danger px-1 text-white mr-2">Features</a>
+                  <span class="text-danger">Politics</span>
+                </div>
+              </div>
+              <h6 class="card-title font-weight-bold mb-2 magazine-title"><a href="#" class="text-dark">If Elected, Who Would Joe Biden Pick for the Supreme Court?</a></h6>
+            </article>
+          </div>
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap">
+                <a href="#">
+                  <img class="card-img-top magazine-image" src="https://d.newsweek.com/en/full/1640316/rbg-memorial.jpg" alt="Joe Biden Pick for the Supreme Court">
+                </a>
+                <div class="category text-uppercase font-weight-bold d-flex align-items-center my-2">
+                  <a href="#" class="bg-danger px-1 text-white mr-2">Features</a>
+                  <span class="text-danger">Politics</span>
+                </div>
+              </div>
+              <h6 class="card-title font-weight-bold mb-2 magazine-title"><a href="#" class="text-dark">If Elected, Who Would Joe Biden Pick for the Supreme Court?</a></h6>
+            </article>
+          </div>
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap">
+                <a href="#">
+                  <img class="card-img-top magazine-image" src="https://d.newsweek.com/en/full/1640316/rbg-memorial.jpg" alt="Joe Biden Pick for the Supreme Court">
+                </a>
+                <div class="category text-uppercase font-weight-bold d-flex align-items-center my-2">
+                  <a href="#" class="bg-danger px-1 text-white mr-2">Features</a>
+                  <span class="text-danger">Politics</span>
+                </div>
+              </div>
+              <h6 class="card-title font-weight-bold mb-2 magazine-title"><a href="#" class="text-dark">If Elected, Who Would Joe Biden Pick for the Supreme Court?</a></h6>
+            </article>
+          </div>
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap">
+                <a href="#">
+                  <img class="card-img-top magazine-image" src="https://d.newsweek.com/en/full/1640316/rbg-memorial.jpg" alt="Joe Biden Pick for the Supreme Court">
+                </a>
+                <div class="category text-uppercase font-weight-bold d-flex align-items-center my-2">
+                  <a href="#" class="bg-danger px-1 text-white mr-2">Features</a>
+                  <span class="text-danger">Politics</span>
+                </div>
+              </div>
+              <h6 class="card-title font-weight-bold mb-2 magazine-title"><a href="#" class="text-dark">If Elected, Who Would Joe Biden Pick for the Supreme Court?</a></h6>
+            </article>
+          </div>
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap">
+                <a href="#">
+                  <img class="card-img-top magazine-image" src="https://d.newsweek.com/en/full/1640316/rbg-memorial.jpg" alt="Joe Biden Pick for the Supreme Court">
+                </a>
+                <div class="category text-uppercase font-weight-bold d-flex align-items-center my-2">
+                  <a href="#" class="bg-danger px-1 text-white mr-2">Features</a>
+                  <span class="text-danger">Politics</span>
+                </div>
+              </div>
+              <h6 class="card-title font-weight-bold mb-2 magazine-title"><a href="#" class="text-dark">If Elected, Who Would Joe Biden Pick for the Supreme Court?</a></h6>
+            </article>
+          </div>
+          <div class="col-12 col-md-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top magazine-image" src="https://d.newsweek.com/en/full/1639341/long-way-hero-2.jpg" alt="Dissent">
+                </a>
+                <a href="#" class="bg-danger text-white py-1 px-3 category position-absolute text-uppercase font-weight-bold magazine-category-text">In focus</a>
+              </div>
+              <div class="p-2">
+                <a href="#" class="text-uppercase font-weight-bold text-dark h6  magazine-title">Dissent</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
       </section>
 
-      <section id="editors-pick">
-        EDITORS PICK
+
+      <section class="container-fluid" id="editors-pick">
+        <h5 class="text-uppercase text-center border-bottom mb-3"><span class="iconify text-danger icon-n h1 mr-1" data-icon="mdi:alpha-n-box" data-inline="false"></span>Editors Pick</h5>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1647048/protesters-clash.jpg" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark">Most Republicans and Democrats Expect 'Increase in Violence' With Election</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card mb-3 border-0">
+              <div class="wrap position-relative">
+                <a href="#">
+                  <img class="card-img-top" src="https://d.newsweek.com/en/full/1648446/joe-biden-supreme-court-packing-answer-democrats.webp" alt="Republicans and Democrats Expect">
+                </a>
+                <a href="#" class="text-danger py-1 px-3 category position-absolute text-uppercase font-weight-bold">U.S.</a>
+              </div>
+              <div class="py-3">
+                <h5 class="card-title font-weight-bold mb-2">
+                <a href="#" class="text-dark"> Democrats Pressure Joe Biden to Publicly Back Packing Supreme Court</a></h5>
+                <p class="paragraph mb-0">Democratic progressives have increasingly voiced support for the idea, but Biden said he opposed it as recently as 2019.</p>
+              </div>
+            </article>
+          </div>
+
+        </div>
       </section>
 
-      <div id="articles-3">
-        ARTICLES 3
+      <!-- Article group 3 article-3 -->
+      <div id="articles-3" class="container-fluid">
+        <section class="article-3 border-top">
+          <h5 class="text-uppercase my-3 text-danger">U.S.</h5>
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648530/greta-thunberg-bristol-youth-strike-climate-march.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Greta Thunberg's Most Damning Quotes</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-md-6">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648530/greta-thunberg-bristol-youth-strike-climate-march.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Trump Coughs Repeatedly in Interview, amid Questions on COVID Test Results</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item px-0 d-flex">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item px-0 d-flex">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648496/1844-chicago-newspaper-ad-underground-railroad.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item px-0 d-flex">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-3 border-top">
+          <h5 class="text-uppercase my-3 text-danger">World</h5>
+          <div class="row">
+            <div class="col-md-8 col-12">
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648383/justin-trudeau.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Greta Thunberg's Most Damning Quotes</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-12">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648383/justin-trudeau.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Trump Coughs Repeatedly in Interview, amid Questions on COVID Test Results</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648496/1844-chicago-newspaper-ad-underground-railroad.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-3 border-top">
+          <h5 class="text-uppercase my-3 text-danger">Business</h5>
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648405/millennials-money-wealth-disparity-boomers.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Greta Thunberg's Most Damning Quotes</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-md-6">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648405/millennials-money-wealth-disparity-boomers.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Trump Coughs Repeatedly in Interview, amid Questions on COVID Test Results</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648496/1844-chicago-newspaper-ad-underground-railroad.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-3 border-top">
+          <h5 class="text-uppercase my-3 text-danger">Tech & science</h5>
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648542/burmese-python.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Greta Thunberg's Most Damning Quotes</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-12 col-md-6">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648542/burmese-python.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Trump Coughs Repeatedly in Interview, amid Questions on COVID Test Results</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648496/1844-chicago-newspaper-ad-underground-railroad.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-3 border-top">
+          <h5 class="text-uppercase my-3 text-danger">Culture</h5>
+          <div class="row">
+            <div class="col-md-8 col-12">
+              <div class="row">
+                <div class="col-md-6 col-12 ">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648575/paul-mccartney-john-lennon.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Greta Thunberg's Most Damning Quotes</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-12">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648575/paul-mccartney-john-lennon.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Trump Coughs Repeatedly in Interview, amid Questions on COVID Test Results</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648496/1844-chicago-newspaper-ad-underground-railroad.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-3 border-top">
+          <h5 class="text-uppercase my-3 text-danger">sports</h5>
+          <div class="row">
+            <div class="col-md-8 col-12">
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648556/aaron-judge-new-york-yankees.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Greta Thunberg's Most Damning Quotes</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-12">
+                  <article class="card mb-3 border-0">
+                    <div class="wrap position-relative">
+                      <a href="#">
+                        <img class="card-img-top" src="https://d.newsweek.com/en/full/1648556/aaron-judge-new-york-yankees.webp" alt="Image alternative text">
+                      </a>
+                    </div>
+                    <div class="py-3">
+                      <h5 class="card-title font-weight-bold mb-2">
+                        <a href="#" class="text-dark">Trump Coughs Repeatedly in Interview, amid Questions on COVID Test Results</a>
+                      </h5>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648496/1844-chicago-newspaper-ad-underground-railroad.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex px-0">
+                  <article class="d-flex py-md-2">
+                    <a href="#" class="stories-img-wrapper">
+                      <img src="https://d.newsweek.com/en/full/1648491/don-bacon-nebraska.webp" alt="Image alternative text" class="img-fluid">
+                    </a>
+                    <div class="pl-3">
+                      <h6 class="title"><a href="#" class="text-dark font-weight-bold">The Time Is Now to Recommit to a National Assault Weapon Ban</a></h6>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
       </div>
 
-      <div id="promotion">
-        PROMOTION
+      <div id="promotion" class="container-fluid border-top border-bottom py-3">
+        <div class="row px-4">
+          <section class="col-12 col-lg-7 px-0 px-lg-2 col-xl-8">
+            <h6 class="text-uppercase my-3 text-danger">Subscribe</h6>
+
+            <div class="bg-light p-4 p-md-5 d-flex align-items-center subscribe-container flex-wrap p-lg-2">
+              <div class="position-relative col-12 col-md-5 p-0 cover-img-wrapper d-flex align-items-center">
+                <img class="position-absolute cover-img img-fluid" src="./assets/images/cover-subscribe.jpg" alt="subscribe cover first">
+                <img class="position-absolute cover-img img-fluid" src="./assets/images/cover-subscribe-1.jpg" alt="subscribe cover second">
+              </div>
+
+              <div class="col-12 col-md-7 pr-md-0 mt-md-0 text-center text-md-left pl-lg-5 position-relative subscribe-text px-0 px-md-1 mt-n5 mt-sm-n4">
+                <h5 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h5>
+                <p class="text-muted">
+                  All Access + Weekly Delivery. <br>
+                  Choose A Membership That's Perfect for You!
+                </p>
+
+                <button class="btn btn-danger text-uppercase" type="submit">
+                  subscribe
+                  <span class="iconify ml-2" data-icon="fa:angle-right" data-inline="false"></span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <div class="col-12 col-lg-5 px-0 px-lg-2 col-xl-4">
+            <h6 class="text-uppercase my-3 text-danger">Newsletter</h6>
+
+            <div class="newsletter-container d-flex border flex-wrap">
+              <div class="col-12 col-md-6 left"></div>
+              <div class="col-12 col-md-6 bg-light p-4 align-self-center text-center text-lg-left">
+                <h4 class="font-weight-bold pb-2">The Starting 5</h4>
+                <p class="text-muted pb-2">
+                  See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+                </p>
+
+                <form action="#">
+                  <div class="row">
+                    <div class="col col-lg-12 p-0">
+                      <input type="email" placeholder="Email Address" class="form-control rounded-0 email-input py-2 email-input">
+                    </div>
+
+                    <div class="col col-lg-12 p-0 mt-lg-3">
+                      <button type="submit" class="btn btn-danger btn-block text-uppercase font-weight-bold py-2 px-1 p-md-2 rounded-0 signup-btn d-flex">
+                        Free sign up
+                        <span class="iconify ml-1" data-icon="ant-design:right-outlined" data-inline="false"></span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </main>
     <!-- footer -->
-    <footer class="main-footer">
-      FOOTER
+    <footer class="main-footer container-fluid p-4">
+      <div class="row pb-md-2">
+        <div class="col-12 col-md-8">
+          <div class="d-flex flex-column flex-md-row">
+            <a href="#" class="">
+              <img src="./assets/images/newsweek-logo-red.svg" alt="Newsweek" class="footer-logo col-7 col-md-12 p-0">
+            </a>
+            <p class="pl-0 pl-md-3 small m-0 text-muted pt-2 align-self-md-end copyright">&copy; 2020 NEWSWEEK DIGITAL LLC</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 align-self-end">
+          <ul class="list-unstyled d-flex h4 mb-1 justify-content-md-end mb-md-0 align-items-end">
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="entypo-social:instagram" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0" id="tumbler-icon"><a href="#" class="text-black-50"><span class="iconify" data-icon="typcn:social-tumbler" data-inline="false"></span></a></li>
+            <li class="p-1 py-md-0"><a href="#" class="text-black-50"><span class="iconify" data-icon="bx:bxl-linkedin" data-inline="false"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row border-top pt-3 d-md-flex flex-nowrap">
+        <div class="text-muted font-weight-bold mx-3">
+          Editions:
+        </div>
+        <div class="footer-links">
+          <ul class="list-unstyled d-flex flex-wrap m-0">
+            <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">U.S. Edition</a></li>
+            <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">日本</a></li>
+            <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">Pakistan</a></li>
+            <li class="pr-3 mb-1 mr-md-3"><a href="#" class="text-muted">Polska</a></li>
+            <li class="pr-3 mb-1 mr-md-3 border-0"><a href="#" class="text-muted">România</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-links">
+        <div class="col-12">
+          <ul class="list-unstyled d-flex flex-wrap">
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">About us</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Corrections</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Contact Us</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Editorial Guidelines</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Advertise</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Copyright</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Terms & Conditions</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Privacy Policy</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Cookie Policy</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Terms of Sale</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Archive</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1"><a href="#" class="text-muted">Announcements</a></li>
+            <li class="pr-3 mb-1 mr-md-3 my-1 border-0"><a href="#" class="text-muted">GDPR Privacy Settings</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 
@@ -131,5 +1725,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="./assets/scripts/script.js"></script>
 </body>
 </html>
