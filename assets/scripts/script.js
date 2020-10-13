@@ -17,13 +17,13 @@ function stickyNav() {
 }
 
 // to make the center more stories sticky
-if (window.innerWidth >= 1024){
-  var more_stories = document.getElementById('more-stories');
-  var middle_height = more_stories.offsetTop + more_stories.offsetHeight;
-  var magzine = document.getElementById('in-the-magazine');
-  var browser_height = window.innerHeight;
+var more_stories = document.getElementById('more-stories');
+var middle_height = more_stories.offsetTop + more_stories.offsetHeight;
+var magzine = document.getElementById('in-the-magazine');
+var browser_height = window.innerHeight;
 
-  function stickyStories() {
+function stickyStories() {
+  if (window.innerWidth >= 1024){
     if (window.pageYOffset >= (middle_height - browser_height) && window.pageYOffset <= (magzine.offsetTop - browser_height)) {
       more_stories.classList.add('position-fixed');
       more_stories.classList.remove('position-absolute');
