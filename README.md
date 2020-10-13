@@ -8,7 +8,8 @@ We have used bootstrap 4 while building this website to make responsive and used
 
 ## About the Project
 
-This project is about building a [news week](https://www.newsweek.com/) home page clone.
+This project is about building a [news week](https://www.newsweek.com/) homepage using bootstrap 4
+and making it responsive on every devices.
 
 ![screenshot](./assets/images/app_screenshot.png)
 
@@ -38,10 +39,11 @@ The features of this project are listed as below:
 - HTML5
 - CSS3
 - Bootstrap 4
+- Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/yocosaka/newsweek-clone/newsweek/index.html)
+[Live Demo Link](https://yocosaka.github.io/newsweek-clone/)
 
 
 ## Getting Started
