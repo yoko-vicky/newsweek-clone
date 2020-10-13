@@ -41,7 +41,7 @@ The features of this project are listed as below:
 
 ## Live Demo
 
-[Live Demo Link](https://yocosaka.github.io/newsweek-clone/)
+[Live Demo Link](https://raw.githack.com/yocosaka/newsweek-clone/newsweek/index.html)
 
 
 ## Getting Started
