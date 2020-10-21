@@ -43,7 +43,7 @@ The features of this project are listed as below:
 
 ## Live Demo
 
-[Live Demo Link](https://yocosaka.github.io/newsweek-clone/)
+[Live Demo Link](https://mv-newsweek-clone.netlify.app/)
 
 
 ## Getting Started
